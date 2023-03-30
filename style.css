@@ -42,6 +42,8 @@ section h3{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     row-gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .img1{
    grid-row-start: 1;
