@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+header{
+   
+    display: flex;
+    /* using this to bring the container to the center setting width is very important */
+    margin-right: auto;
+    margin-left: auto;
+    width:900px ;
+    margin-top: 10vh;
+}
+img{
+    height: 400px;
+    width: 400px;
+}
+.text{
+    width: 500px;
+}
+h3{
+    font-size:30px;
+}
+h2{
+    font-size:50px;
+}
+.text h4{
+    font-size: 29px;
+    color:rgb(197, 197, 89);
+}
+section h3{
+    text-align: center;
+    text-decoration-line: underline ;
+    text-decoration-color: blue;
+    text-underline-position: below;
+   
+}
+.igrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+}
+.img1{
+   grid-row-start: 1;
+   grid-row-end: 2;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   text-align: center;
+}
+.img2{
+   grid-row-start: 1;
+   grid-row-end: 2;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   text-align: center;
+}
+.img3{
+   grid-row-start: 2;
+   grid-row-end: 3;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   text-align: center;
+}
+.img4{
+   grid-row-start: 2;
+   grid-row-end: 3;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    header{
+       flex-direction: column;
+       gap: 50px;
+       width: 500px;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+    .text h2,h3,h4{
+        display: block;
+        text-align: center;
+    }
+    .igrid{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+
+}
+footer h4{
+    text-align: center;
+    padding: 20px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
