@@ -3,6 +3,7 @@
     padding: 0;
     background-color: black;
     color: white;
+    box-sizing: border-box;
 }
 header{
    
@@ -51,6 +52,7 @@ section h3{
    grid-column-start: 1;
    grid-column-end: 2;
    text-align: center;
+  
 }
 .img2{
    grid-row-start: 1;
@@ -74,7 +76,7 @@ section h3{
    text-align: center;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) and (min-width:0px) {
     header{
        flex-direction: column;
        gap: 50px;
@@ -87,14 +89,29 @@ section h3{
     .text h2,h3,h4{
         display: block;
         text-align: center;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .igrid{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+       
     }
-
+   
+    /* below contion is imp to bring the main img into center */
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    
 
 }
 footer h4{
@@ -106,5 +123,8 @@ footer ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 500px;
     gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
